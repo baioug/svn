@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_la_server"
+                android:text="锁定应用服务(未开启)"
+                android:textColor="#ee46D0F9"
+                android:textSize="24sp" />
+        <CheckBox
+            android:id="@+id/cb_la_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_la_stronge"
+                android:text="强力保护模式未开启"
+                android:textColor="#ee46D0F9"
+                android:textSize="24sp" />
+        <CheckBox
+            android:id="@+id/cb_la_stronge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+    
+    
+    <TextView
+        android:id="@+id/tv_la_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="更改软件锁定模式"
+        android:textColor="#ee46D0F9"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lockapp_help"
+        />
+ 
+</LinearLayout>

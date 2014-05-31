@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+        <ImageView
+        android:id="@+id/imv_avitem_icon"
+        android:background="@drawable/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        
+        <LinearLayout android:orientation="vertical" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="4.0">
+        
+        <TextView 
+         android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="当前权限"
+        android:textSize="24sp"
+            android:id="@+id/tv_avitem_desc" 
+            />
+        <TextView
+         android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="一共12个程序"
+        android:id="@+id/tv_avitem_count" 
+             />
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:id="@+id/imv_avitem_arrow" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/list_item_arrow" 
+        />
+    
+    
+
+</LinearLayout>

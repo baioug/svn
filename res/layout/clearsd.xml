@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:id="@+id/ll_clear_all"
+        android:orientation="horizontal" 
+        android:gravity="center"      
+        >
+            <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffaa2233"
+        android:id="@+id/tv_clear_title"
+        android:text="共10项,已选择0项"
+        android:textSize="21sp"
+        />
+         
+        <CheckBox 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_clear_all"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            
+            />
+        
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@drawable/item_background_selector" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_clear_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="60dip"
+                android:layout_height="60dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载应用程序"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+            <Button 
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="210dp"
+            android:id="@+id/bt_clearsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清理"
+            android:textSize="24dp"
+            android:textColor="#ee1177ee"
+            />
+        
+    </FrameLayout>
+
+</LinearLayout>

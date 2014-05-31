@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/bl_menu_del" android:title="删除该号码"></item>
+    <item android:id="@+id/bl_menu_up" android:title="修改该号码"></item>
+    <item android:id="@+id/bl_menu_wp" android:title="清空黑名单"></item>
+    <item android:id="@+id/bl_menu_batch" android:title="批量删除"></item>
+    
+
+</menu>

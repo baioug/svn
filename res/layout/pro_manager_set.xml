@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_pms_showsys"
+                android:text="显示系统进程(未开启)"
+                android:textColor="#ee46D0F9"
+                android:textSize="24sp" />
+        <CheckBox
+            android:id="@+id/cb_pms_showsys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_pms_auto"
+                android:text="自动清理服务(未开启)"
+                android:textColor="#ee46D0F9"
+                android:textSize="24sp" />
+        <CheckBox
+            android:id="@+id/cb_pms_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_pms_offscreen"
+                android:text="锁屏自动清理(未开启)"
+                android:textColor="#ee46D0F9"
+                android:textSize="24sp" />
+        <CheckBox
+            android:id="@+id/cb_pms_offscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+    
+    
+    <TextView
+        android:id="@+id/tv_pms_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="自动清理时间间隔"
+        android:textColor="#ee46D0F9"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white" />
+    
+        <TextView
+        android:id="@+id/tv_pms_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="center_horizontal"
+        android:text="选择需要清理的程序"
+        android:textColor="#ee11eeee"
+        android:textSize="20sp" />
+        
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        >
+         <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_pms"        
+        ></ListView>
+            <LinearLayout
+            android:id="@+id/ll_pms_loading"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="60dip"
+                android:layout_height="60dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载应用程序"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout> 
+        
+    </FrameLayout>
+   
+ 
+</LinearLayout>

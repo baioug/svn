@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_user_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+
+        <TextView 
+            android:id="@+id/tv_user_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP使用统计已开启"
+            android:textColor="#00C500"
+            android:textSize="32sp"
+            
+            />
+        <CheckBox 
+            android:id="@+id/cb_user_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:cacheColorHint="@android:color/transparent"
+        android:id="@+id/lv_user_appstatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:listSelector="@drawable/item_background_selector"
+      >
+    </ListView>
+
+</LinearLayout>

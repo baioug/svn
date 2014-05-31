@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="100dp"
+    android:background="#ffa0a0a0"
+    android:orientation="vertical" >
+  <LinearLayout 
+      android:layout_width="240dp"
+    android:layout_height="60dp"
+    android:orientation="vertical" >
+
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入密码"
+        android:textSize="14sp"
+        android:textColor="#dd222222"
+        />
+    <EditText 
+        android:id="@+id/et_ladlg_enterpass"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="240dip"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_ladlg_enterpass_ok"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/bt_ladlg_enterpass_cancle"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:text="取消" />
+
+    </LinearLayout>  
+
+
+</LinearLayout>
+

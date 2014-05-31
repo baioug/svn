@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffa0a0a0" android:layout_width="240.0dip" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="240.0dip" android:layout_height="60.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#dd222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="输入密码" />
+        <EditText android:textSize="20.0sp" android:id="@+id/ed_enterpass" android:layout_width="240.0dip" android:layout_height="wrap_content"  android:hint="enter password"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="240.0dip" android:layout_height="50.0dip">
+        <Button android:id="@+id/bt_enterpass_ok" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="确定" />
+        <Button android:id="@+id/bt_enterpass_cancle" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

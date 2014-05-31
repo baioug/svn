@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transcolor"
+    android:id="@+id/ll_setguard"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_marginTop="10dp"
+        style="@style/text_title_style"
+        android:text="  欢迎使用手机防盗功能" 
+        />
+
+    <ImageView 
+        style="@style/devide_line_style"/>
+    <TextView
+        style="@style/text_content_style"
+        android:layout_marginTop="18dip"
+        android:textColor="#ff8AF3FE"
+        android:text="手机防盗卫士提供:" />
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="sim卡变更报警" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="gps定位追踪" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="远程销毁数据" />
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="远程备份数据" />
+    </LinearLayout>
+    
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="拍摄对方照片" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="远程控制手机" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        >
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imb_setguard_left"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/bt_left"
+            />
+            <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imb_setguard_right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bt_right"
+            />
+        
+    </RelativeLayout >
+    
+</LinearLayout>

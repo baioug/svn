@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_number"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/numberlocation"
+        android:layout_width="0.0dip"
+        android:layout_height="48.0dip"
+        android:layout_weight="1.0"
+        android:hint="@string/title_search_help"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="18.0dip"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btnSearch"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:background="@drawable/ic_search"
+        android:contentDescription="@string/title_search_help" />
+
+</LinearLayout>

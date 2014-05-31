@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+ >
+  <TextView 
+     android:id="@+id/tv_drag_addr"
+      android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="按住绿色条拖动归属地显示的位置"
+     />   
+      <ImageView 
+     android:id="@+id/imv_drag_addr"
+     android:layout_width="200dp"
+     android:layout_height="40dp"
+     android:scaleType="center"
+     android:src="@drawable/transbg"
+
+    />
+
+
+
+
+</RelativeLayout>

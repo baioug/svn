@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_city"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCityTextInput"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/numberlocationcitycode"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:hint="@string/title_search_help_city_code"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textSize="18.0dip"
+            android:textStyle="bold" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btnSearchCityCode"
+            android:layout_width="48.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_search"
+            android:contentDescription="@string/title_search_help_city_code" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewCityPicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

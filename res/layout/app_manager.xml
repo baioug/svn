@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#313849"
+    >
+        <LinearLayout
+    	android:layout_height="fill_parent"
+    	android:layout_width="fill_parent"
+    	android:orientation="vertical"
+    >
+    <LinearLayout
+    	android:layout_height="28dp"
+    	android:layout_width="fill_parent"
+    	android:orientation="horizontal"
+    	android:gravity="center_vertical"
+    	android:paddingLeft="5dp"
+    >
+    	<ImageView
+    		android:layout_width="18dp"
+    		android:layout_height="18dp"
+    		android:src="@drawable/appmanager"
+    	></ImageView>
+    	<TextView
+    	    android:id="@+id/tv_app_title"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="#eee"
+    		android:textSize="18sp"
+    		android:text="应用程序管理"
+    	></TextView>
+    </LinearLayout>
+    
+        <LinearLayout
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent"
+    	android:orientation="horizontal"
+    	android:gravity="center_vertical"
+    	android:paddingLeft="5dp"
+    >
+    <EditText 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:id="@+id/et_app_find"
+        android:hint="输入进行搜索"
+        
+        />
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_app_find"
+        android:text="查找"
+        android:layout_marginLeft="80dp"
+        android:textSize="21sp"
+        />
+       </LinearLayout>
+       
+     </LinearLayout>
+    <GridView
+    	android:id="@+id/gv_apps"
+    	android:layout_height="fill_parent"
+    	android:layout_width="fill_parent"
+    	android:numColumns="3" 
+    	android:horizontalSpacing="10px"
+    	android:verticalSpacing="10px"
+    	android:listSelector="@drawable/choose_gridview"
+    	android:layout_marginTop="72dp"
+    	android:layout_marginBottom="60dp"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    	android:layoutAnimation="@anim/layout1"
+    	   	>
+    </GridView>
+    
+    <!-- 
+
+设置为不可见
+    
+     -->
+    <ListView
+    	android:id="@+id/lv_apps"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:listSelector="@drawable/choose_listview"
+    	android:layout_marginTop="72dp"
+    	android:layout_marginBottom="60dp"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    	android:visibility="gone"
+    	android:layoutAnimation="@anim/layout1"
+    >
+    </ListView>
+
+    
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="64dp"
+    	android:layout_alignParentBottom="true"
+    >
+    <ImageButton
+    	android:id="@+id/imb_change_view"
+    	android:layout_alignParentLeft="true"
+    	android:layout_marginLeft="5px"
+    	android:layout_marginTop="1px"
+    	android:src="@drawable/list"
+    	android:layout_width="66dp"
+    	android:layout_height="64dp"
+    ></ImageButton>
+    <ImageButton
+    	android:id="@+id/imb_change_category"
+    	android:layout_alignParentRight="true"
+    	android:layout_marginRight="5px"
+    	android:layout_marginTop="1px"
+    	android:background="@drawable/android_icon"
+    	android:layout_width="66dp"
+    	android:layout_height="64dp"
+    ></ImageButton>
+    
+    
+    </RelativeLayout>
+</RelativeLayout>

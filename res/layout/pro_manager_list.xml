@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_pml_cho"
+        android:orientation="horizontal"
+        >
+            <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff2299dd"
+        android:text="当前运行的进程"
+        android:id="@+id/tv_pml_current"
+        android:textSize="21sp"
+        />
+        <CheckBox 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textColor="#ff2299dd"
+            android:id="@+id/cb_pml_chooseall"
+            android:layout_marginLeft="6dp"
+            />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_pml"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@drawable/item_background_selector" >
+        </ListView>
+
+        
+        <LinearLayout
+            android:id="@+id/ll_pml_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="60dip"
+                android:layout_height="60dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载应用程序"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+           <Button 
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="210dp"
+            android:id="@+id/bt_pml_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键清理"
+            android:textSize="24dp"
+            android:textColor="#ee1177ee"
+            />
+    </FrameLayout>
+    
+</LinearLayout>

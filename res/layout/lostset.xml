@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transcolor"
+    android:id="@+id/ll_lostset"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_marginTop="10dp"
+        style="@style/text_title_style"
+        android:text="         设置手机防盗功能" 
+        />
+
+    <ImageView 
+        style="@style/devide_line_style"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dip"
+        android:orientation="horizontal"
+        >
+            <TextView
+                android:id="@+id/tv_lostset_start"
+        style="@style/text_content_style"
+        android:textSize="24sp"
+        android:textColor="#ff8AF3FE"
+        android:text="开启手机防盗卫士" />
+        <CheckBox
+            android:id="@+id/cb_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#dddd1100"
+            android:textSize="21sp"
+            android:text="未启动保护" />
+    </LinearLayout>
+
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:paddingTop="2dip"
+            android:text="sim卡变更报警" />
+          <CheckBox
+            android:id="@+id/cb_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#dddd1100"
+            android:layout_marginLeft="48dp"
+            android:text="没有绑定" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <TextView 
+            android:layout_marginTop="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#eeeeeeee"
+            android:text="   输入手机丢失后接受防盗短信的安全号码  \n   点击右边的按钮从联系人列表选择号码"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+                
+        <ImageView style="@style/image_star_style" />
+        <EditText 
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_safeno"
+            android:textSize="24sp"
+            android:hint="输入安全号码"          
+              />
+        <ImageButton 
+            android:id="@+id/imb_setpro_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/chosecontent"
+            />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" 
+        android:gravity="center"
+        >
+        <ImageView 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vprotect"
+        android:id="@+id/imv_set_sts"
+            />
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_set_sts"
+        android:text="您的手机正在被保护"
+        android:textSize="28sp"
+        android:textColor="#ff80F1FE"
+            
+            />
+        
+        
+    </LinearLayout>
+
+
+    
+    <RelativeLayout 
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imb_setpro_left"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/bt_left"
+            />
+        
+             <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imb_setpro_ok"
+            android:layout_marginLeft="128dp"
+            android:src="@drawable/loastproimb"
+            />
+            <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imb_setpro_right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bt_right"
+            />
+        
+    </RelativeLayout >
+    
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9A9A9A"
+    android:orientation="vertical" >
+    
+    <ProgressBar
+        android:id="@+id/pb_virus"
+        style="@style/tallerBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+    
+        <com.ant.liao.GifView 
+		android:layout_height="63dp" 
+		android:layout_width="70dp"
+		android:id="@+id/gifv_virus"
+    	android:layout_marginLeft="18dp"
+    	android:layout_marginTop="20dp"
+    	android:visibility="gone"
+		android:enabled="false" />
+        <ImageView 
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/imv_virus"
+        android:layout_marginTop="21dp"
+    	android:layout_marginLeft="25dp"
+        android:background="@drawable/virus_not_scan"
+         />
+ 
+       <Button
+        android:id="@+id/bt_virus"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="32dp"
+    	android:layout_marginLeft="200dp"
+    	android:layout_marginRight="5dp"
+        android:text="扫描手机" />
+ 
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="88dp"
+        android:background="#11ffff"
+        />
+    
+      <ScrollView
+        android:id="@+id/sv_virus"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="90dp"
+        android:scrollbarStyle="insideInset"
+        android:background="#ee666666"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+        android:id="@+id/ll_virus"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        </LinearLayout>
+        </ScrollView>
+        
+      
+      
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lv_virus"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="108dp"
+        android:visibility="gone"
+        android:background="#99999999"
+        ></ListView>
+
+</RelativeLayout>

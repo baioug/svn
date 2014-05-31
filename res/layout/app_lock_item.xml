@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dip"
+    android:background="@drawable/item_background_selector"
+    android:gravity="center_vertical" >
+<ImageView 
+    android:layout_width="fill_parent"
+    android:layout_height="2px"
+    android:background="#993FD1FA"
+    />
+    <ImageView
+        android:id="@+id/imv_la_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:layout_toRightOf="@id/imv_la_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_la_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="功能名字"
+            android:textColor="@color/textcolor"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_la_packname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="包名"
+            android:textColor="@color/textcolor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imv_la_status"
+        android:layout_width="48dip"
+        android:layout_height="54dip"
+        android:paddingTop="6dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/unlock" />
+</RelativeLayout>

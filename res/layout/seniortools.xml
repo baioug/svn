@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_stools_addrser"
+                android:text="手机归属地服务(未开启)"
+                android:textColor="#ee46D0F9"
+                android:textSize="20sp" />
+        <CheckBox
+            android:id="@+id/cb_stools_addrser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip" >
+
+            <TextView
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_stools_devadmin"
+                android:text="设备管理员权限未开启"
+                android:textColor="#ee46D0F9"
+                android:textSize="20sp" />
+        <CheckBox
+            android:id="@+id/cb_stools_devadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+    
+    
+    <TextView
+        android:id="@+id/tv_stools_setstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:text="更改归属地显示风格"
+        android:textColor="#ee46D0F9"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_stools_setloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:text="更改归属地显示位置"
+        android:textColor="#ee46D0F9"
+        android:textSize="20sp" />
+    
+        
+            <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_stools_common_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="常用电话号码查询"
+                android:textColor="#ee46D0F9"
+                android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="0dip"
+        android:background="@android:color/white" />
+    <TextView
+        android:id="@+id/tv_stools_query"
+        style="@style/text_content_style"
+        android:textColor="#ee46D0F9"
+        android:text="手机号码归属地查询"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="0dip"
+        android:background="@android:color/white" />
+    
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:id="@+id/ll_stools_backup"
+        android:orientation="horizontal" >
+                
+        <ImageView style="@style/image_star_style" />
+    <TextView
+        android:id="@+id/tv_stools_backup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="备份短信联系人"
+        android:textColor="#ee46D0F9"
+        android:textSize="20sp" />
+    <ImageView 
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/backup"
+        android:layout_marginLeft="48dp"
+        
+        />
+        
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+
+          <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:id="@+id/ll_stools_restore"
+        android:orientation="horizontal" >
+                
+        <ImageView style="@style/image_star_style" />
+    <TextView
+        android:id="@+id/tv_stools_restore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:text="还原短信联系人"
+        android:textColor="#ee46D0F9"
+        android:textSize="20sp" />
+    
+        <ImageView 
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:src="@drawable/restore"
+        android:layout_marginLeft="48dp"
+        
+        />
+          </LinearLayout>
+          
+
+            <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:id="@+id/ll_stools_lockapp"
+        android:orientation="horizontal" >
+                
+            
+        <ImageView style="@style/image_star_style" />
+    <TextView
+        android:id="@+id/tv_stools_lockapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:text="应用程序锁定"
+        android:textColor="#ee46D0F9"
+        android:textSize="20sp" />
+    
+    <ImageView 
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/lockapp"
+        android:layout_marginLeft="66dp"
+        
+        />
+    
+          </LinearLayout>
+          
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:id="@+id/ll_stools_user"
+        android:orientation="horizontal" >
+            
+        <ImageView style="@style/image_star_style" />
+    <TextView
+        android:id="@+id/tv_stools_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:text="APP使用统计"
+        android:textColor="#ee46D0F9"
+        android:textSize="20sp" />
+    
+    <ImageView 
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:src="@drawable/user_analysis"
+        android:layout_marginLeft="66dp"
+        
+        />
+    
+          </LinearLayout>
+          
+                    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+                    
+                <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:id="@+id/ll_stools_wifi"
+        android:orientation="horizontal" >
+            
+        <ImageView style="@style/image_star_style" />
+    <TextView
+        android:id="@+id/tv_stools_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:text="无线安全(WiFi)"
+        android:textColor="#ee46D0F9"
+        android:textSize="20sp" />
+    
+    <ImageView 
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:src="@drawable/anti_ap_spoofing"
+        android:layout_marginLeft="58dp"
+        
+        />
+          </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/white" />
+
+</LinearLayout>

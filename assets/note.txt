@@ -1,0 +1,43 @@
+//删除某个字段
+
+BEGIN TRANSACTION;
+CREATE TEMPORARY TABLE temp_if('city','area','_id');  
+
+INSERT INTO temp_if SELECT city,area,_id FROM address_tb;
+
+DROP TABLE address_tb; 
+CREATE TABLE address_tb('city','area','_id'); 
+INSERT INTO address_tb SELECT city,area,_id FROM temp_if; 
+DROP TABLE temp_if; 
+COMMIT; 
+VACUUM//执行该命令才会让数据库程序把清理出来的空间释放掉
+
+
+BEGIN TRANSACTION;
+CREATE TEMPORARY TABLE temp_if('city','area'); 
+// 只返回一条数据
+INSERT INTO temp_if SELECT city,area FROM address_tb group by area having count(1)>1;
+
+CREATE TEMPORARY TABLE temp_if('city','area','_id'); 
+INSERT INTO temp_if SELECT city,area,_id FROM address_tb group by area having count(1)>1;
+
+/*
+	numinfo 里面是 原始的 id address 也是原始id temp里面是新的id  temp就是修改id压缩之后的 address表
+	
+     numinfo 使用原始id 从 address表里查出 area 继续使用这个 area从temp里面查询出 新的 id 更新回 numinfo
+
+ 
+ INSERTORREPLACEINTO   numinfo(_id) select address.area  from address numinfo where numinfo._id = address._id
+
+update  numinfo set _id =(select area  from address_tb,numinfo where  address_tb._id = numinfo.outkey  group by area having count(1)>1)
+
+
+
+update  numinfo set outkey =(select area  from address_tb,numinfo where  address_tb._id = numinfo.outkey )
+
+
+
+*/
+update numinfo set  _id=temp._id from temp where a.id = b.id and b.area = temp.area;
+
+insert into tem2 select 
